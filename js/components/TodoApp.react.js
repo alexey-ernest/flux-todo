@@ -6,7 +6,8 @@ var TodoStore = require('../stores/TodoStore');
 
 function getTodoState() {
   return {
-    allTodos: TodoStore.getAll()
+    allTodos: TodoStore.getAll(),
+    areAllComplete: TodoStore.areAllComplete()
   };
 }
 
